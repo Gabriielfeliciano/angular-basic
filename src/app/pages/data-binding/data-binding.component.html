@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col Interpolação">
+            <h3>Interpolação</h3>
+            <p>O valor é: {{valor}}</p>
+            <p>Idade é: {{idade}}</p>
+
+            <!-- Property Binding -->
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="text" class="form-control" value="{{email}}">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"> Age</label>
+                    <input type="text" class="form-control" [value]="idade">
+                </div>
+            </form>
+
+        </div>
+
+        <!-- <div class="col Event">
+            <h3>Event Binding</h3>
+            <button (click)="botaoClicado()" class="btn btn-primary">Me Clique!</button>
+            <br><br>
+            <input type="text" (keyup)="onKey($event)" (keyup.enter)="salvarValor(campo.value)"
+                (blur)="salvarValor(campo.value)" #campo>
+
+            <p>Valor digitado: {{ valorAtual }}</p>
+            <p>Valor Salvo: {{ valorSalvo }}</p>
+        </div> -->
+
+        <!-- <div class="col Two-Way">
+            <h3>Two-way data binding</h3>
+
+            <input type="text" [value]="nome" (input)="nome = campoInput.value" #campoInput>
+            <input type="text" [(ngModel)]="nome">
+            <p>Foi digitado: {{ nome }}</p>
+
+            <input type="text" [(ngModel)]="pessoa.nome">
+            <input type="text" [(ngModel)]="pessoa.idade">
+            <p>Meu nome é {{ pessoa.nome }} e eu tenho {{ pessoa.idade }} anos</p>
+        </div> -->
+
+        <!-- <span>Input e Output</span>
+        <span>Life cycle</span>
+        <span>ViewChild</span>
+    </div> -->
+    </div>
