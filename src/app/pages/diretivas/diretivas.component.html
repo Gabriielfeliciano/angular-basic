@@ -1,1 +1,25 @@
-<p>diretivas works!</p>
+<div class="container">
+    <div class="row">
+        <!-- ngIf -->
+        <div *ngIf="!mostrarCursos">
+            Lista não tem cursos
+        </div>
+
+        <div *ngIf="mostrarCursos">
+            Lista de cursos aqui
+            <ul>
+                <!-- ngFor -->
+                <li *ngFor="let item of cursos">
+                    {{item}}
+                </li>
+            </ul>
+        </div>
+
+        <p>
+            Descrição: {{tarefa.desc}}
+        </p>
+
+        <p>Responsável: {{ tarefa.responsavel.nome }}</p>
+
+    </div>
+</div>

@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasComponent implements OnInit {
 
+  cursos: string[] = ["Angular", ".Net", "JavaScript"];
+
+  mostrarCursos = true;
+
+  tarefa: any = {
+    desc: 'Descrição da tarefa',
+    // responsavel: null,
+    responsavel: {
+      nome: 'Gabriel'
+    }
+  };
+
   constructor() { }
 
   ngOnInit(): void {
